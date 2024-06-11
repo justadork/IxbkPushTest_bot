@@ -11,11 +11,12 @@ const groupId = -4277662891
 const token = '7442394491:AAHuB8di2zowkci3XMUOFk6Jzm8fzQ609yU';
 /* const bot = new TelegramBot(token, {
   polling: true
-});
- */
+}); */
+
 const wxPusherApi = 'https://wxpusher.zjiecode.com/api/send/message'
 const appToken = 'AT_AnbBrPzNFObUr92643qTl2vusS5SNSXW'
 const wxUid = 'UID_qFgF6BNevF4w5QGzV3OLOxB6C44C'
+
 
 const baseApi = 'http://new.xianbao.fun/plus/json/push.json?230406'
 const callApi = async () => {
@@ -118,4 +119,4 @@ const execCount = () => {
   console.log(time++, 'time++----->');
 }
 
-run(true)
+run(false)
