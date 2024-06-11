@@ -43,7 +43,7 @@ const sendWxPusherMsg = async (msg) => {
 
 
 const rule = new schedule.RecurrenceRule();
-rule.second = Array.from({ length: 12 }, (_, i) => (i) * 5); // 每隔 5 秒执行一次
+rule.second = Array.from({ length: 12 }, (_, i) => (i) * 5); // 每隔 10 秒执行一次
 
 const func = async () => {
   try {
@@ -74,7 +74,6 @@ const transformList = (list) => {
   let res = []
   if (Array.isArray(list)) {
     res = list.filter(item => regex.test(item.content + item.title))
-    res = list
   }
   return res.map(processCardMsg).filter(Boolean).slice(0, 1)
 }
