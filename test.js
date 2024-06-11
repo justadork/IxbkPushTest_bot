@@ -43,7 +43,7 @@ const sendWxPusherMsg = async (msg) => {
 
 
 const rule = new schedule.RecurrenceRule();
-rule.second = Array.from({ length: 12 }, (_, i) => (i) * 5); // 每隔 10 秒执行一次
+rule.second = Array.from({ length: 12 }, (_, i) => (i) * 5); // 每隔 5 秒执行一次
 
 const func = async () => {
   try {
