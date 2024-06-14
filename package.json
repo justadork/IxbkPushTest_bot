@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "node index.js"
+    "serve": "node index.js",
+    "start": "pm2 start ecosystem.config.js"
   },
   "keywords": [],
   "author": "",
