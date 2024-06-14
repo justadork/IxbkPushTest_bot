@@ -34,4 +34,4 @@ jobs:
       - name: Install Dependency
         run: |
           npm install
-          node ./test.js
+          npm run serve
