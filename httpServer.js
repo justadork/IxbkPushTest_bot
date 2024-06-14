@@ -2,7 +2,7 @@ const http = require('http');
 
 const regex = {
   content: '镜|依视路|酱|牛奶|粽子',
-  catename: '酷安'
+  catename: ''
 };
 
 const headers = { 'Content-Type': 'application/json' };
@@ -50,6 +50,7 @@ const handleSetRequest = (url, res, key) => {
 const serverCallback = (req, res) => {
   // 解析 URL
   const url = new URL(req.url, `http://${req.headers.host}`);
+  console.log(`http://${req.headers.host}`);
 
   // 设置 CORS 头部
   setResponseHeaders(res);
